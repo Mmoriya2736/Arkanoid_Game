@@ -11,7 +11,7 @@ The objective of the game is to clear rows of colored blocks using bouncing ball
 - **Screen Dimensions:** 800 × 600 pixels running at 60 FPS.
 - **Starting Lives / Balls:** 3 simultaneous balls launched at varying trajectories.
 - **Dynamic Paddle:** Divided into 5 distinct strike zones. Depending on where the ball strikes the paddle, it bounces at different angles (from 210° to 330°), giving the player strategic control over ball direction.
-- **Color Changing Mechanics:** Balls change color to match the block they hit.
+- **Color Mechanics:** Balls change color to match the block they hit, and only destroy blocks with a differing color.
 - **Score System:**
   - **+5 points** for each destroyed block.
   - **+100 bonus points** upon destroying all blocks and winning the game.
@@ -25,8 +25,8 @@ The objective of the game is to clear rows of colored blocks using bouncing ball
 
 | Key | Action |
 | :--- | :--- |
-| `Left Arrow` ($\leftarrow$) | Move paddle left (wraps around screen boundaries) |
-| `Right Arrow` ($\rightarrow$) | Move paddle right (wraps around screen boundaries) |
+| `Left Arrow` (←) | Move paddle left (wraps around screen boundaries) |
+| `Right Arrow` (→) | Move paddle right (wraps around screen boundaries) |
 
 ---
 
@@ -126,10 +126,10 @@ From the project root directory:
      javac -cp biuoop-1.4.jar -d bin src/*.java src/*/*.java
      ```
 
-   * **Windows (Command Prompt / PowerShell):**
+   * **Windows (Command Prompt):**
      ```cmd
      if not exist bin mkdir bin
-     javac -cp "biuoop-1.4.jar" -d bin src/*.java src/*/*.java
+     javac -cp "biuoop-1.4.jar" -d bin src\*.java src\Collision\*.java src\Game\*.java src\Geometry\*.java src\Sprite\*.java
      ```
 
 2. **Run the game:**
@@ -151,15 +151,8 @@ From the project root directory:
 1. Open the project folder in your IDE.
 2. Ensure the JDK (version 11+) is configured as the Project SDK.
 3. Add `biuoop-1.4.jar` as a project library dependency:
-   - **IntelliJ IDEA:** Go to `File` $
-ightarrow$ `Project Structure` $
-ightarrow$ `Libraries` $
-ightarrow$ `+` (Add Java) $
-ightarrow$ Select `biuoop-1.4.jar`.
-   - **Eclipse:** Right-click the project $
-ightarrow$ `Build Path` $
-ightarrow$ `Add External Archives` $
-ightarrow$ Select `biuoop-1.4.jar`.
+   - **IntelliJ IDEA:** Go to `File` → `Project Structure` → `Libraries` → `+` (Add Java) → Select `biuoop-1.4.jar`.
+   - **Eclipse:** Right-click the project → `Build Path` → `Add External Archives` → Select `biuoop-1.4.jar`.
 4. Locate `src/Ass5Game.java`.
 5. Right-click on `Ass5Game.java` and select **Run 'Ass5Game.main()'**.
 
@@ -167,4 +160,4 @@ ightarrow$ Select `biuoop-1.4.jar`.
 
 ## 👩‍💻 Author
 
-- **Moriya Malkiel**
+- **Moriya Malkiel** - Computer Science Student, Bar-Ilan University
