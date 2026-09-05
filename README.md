@@ -26,7 +26,7 @@ The objective of the game is to clear rows of colored blocks using bouncing ball
 | Key | Action |
 | :--- | :--- |
 | `Left Arrow` ($\leftarrow$) | Move paddle left (wraps around screen boundaries) |
-| `Right Arrow` ($\ightarrow$) | Move paddle right (wraps around screen boundaries) |
+| `Right Arrow` ($\rightarrow$) | Move paddle right (wraps around screen boundaries) |
 
 ---
 
