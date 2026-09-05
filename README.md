@@ -160,4 +160,4 @@ From the project root directory:
 
 ## 👩‍💻 Author
 
-- **Moriya Malkiel** - Computer Science Student, Bar-Ilan University
+- **Moriya Malkiel**
